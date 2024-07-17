@@ -1,0 +1,103 @@
+                                                                                          git & github[all cmd's and imp points]
+
+
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git
+$ git config --global user.name Piyush Sharma
+
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git
+$ git config --global user.email pitestershs@gmail.com
+
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git
+$ git config --global user.name
+Piyush
+
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git
+$ git config --global user.email
+pitestershs@gmail.com
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git
+$ code .  -------we used this code to open vs code
+
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git
+$ git init
+Initialized empty Git repository in E:/Devops/git/.git/
+
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git (master)
+$ ls -lart
+total 0
+drwxr-xr-x 1 Piyush 197609 0 Jul 16 22:40 ../
+drwxr-xr-x 1 Piyush 197609 0 Jul 16 22:51 ./
+drwxr-xr-x 1 Piyush 197609 0 Jul 16 22:51 .git/
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git (master)
+$ touch index.html
+
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git (master)
+$ ls
+index.html
+
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git (master)
+$ vi index.html
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git (master)
+$ cat index.html
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git (master)                        ___git add---> to make files to stagging area
+$ git status                                                                                                 ___git commit---> to commit or photo kich jana or save ho jana with msg
+On branch master                                                                                       ___git add -a   ---> to make  all files to stagging area 
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git (master)
+$ git add index.html
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git (master)
+$ git commit
+[master (root-commit) f975610] intial commit
+ 1 file changed, 67 insertions(+)
+ create mode 100644 index.html
+
+Piyush@DESKTOP-UJ7HH66 MINGW64 /E/devops/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+git checkout filename ----->to recover old file
+git checkout -f  ----->will recover all file till exist
+git log --->will tell about author and info
+git log -p -1/2/3 ----> will tell about number of last commits as per numbers
+git diff ----> will show changes from last changed
+git diff --staged -->will show changes diff from stagged area
+
+
+
+
